@@ -36,10 +36,10 @@ const scrollToTopBtn = document.getElementById('scrollToTopBtn');
             item.addEventListener('click', function() {
                 // Прибираємо активний клас у всіх елементів
                 menuItems.forEach(otherItem => {
-                    otherItem.querySelector('a').classList.remove('text-white', 'bg-[#99BAED]');
+                    otherItem.querySelector('a').classList.remove('text-white', 'bg-main');
                 });
 
                 // Додаємо активні класи тільки для натиснутого елемента
-                item.querySelector('a').classList.add('text-white', 'bg-[#99BAED]');
+                item.querySelector('a').classList.add('text-white', 'bg-main');
             });
         });
